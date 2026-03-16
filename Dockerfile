@@ -1,5 +1,5 @@
 # Use OpenJDK 21 as the base image
-FROM openjdk:21
+FROM eclipse-temurin:21
 
 # Set the working directory in the image
 WORKDIR /app
@@ -14,4 +14,4 @@ EXPOSE 8080
 ENV JAVA_OPTS=""
 
 # Run the jar file to start the Spring Boot application
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
